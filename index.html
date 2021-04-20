@@ -25,7 +25,10 @@
 
   <body>
     <div class="container">
-      <h1 class="text-secondary">forks.one</h1>
+      <h1 class="text-secondary" id="domainName"></h1>
+      <script>
+        document.getElementById("domainName").innerHTML = window.location.hostname;
+      </script>
       <br />
 
       Coding Bootcamp
