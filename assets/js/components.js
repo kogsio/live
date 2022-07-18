@@ -64,10 +64,10 @@ class Submodule extends HTMLElement {
         <p>
           ${lectureStr}
           ${videoStr}
+          ${audioStr}          
           ${camtasiaStr}
           ${exerciseStr}
           ${linkStr}
-          ${audioStr}
           ${testStr}          
         </p>
     `;    
