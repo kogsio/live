@@ -22,6 +22,8 @@ class Submodule extends HTMLElement {
     const exerciseUrl = this.getAttribute('exerciseUrl');
     const test        = this.getAttribute('test');
     const testUrl     = this.getAttribute('testUrl');
+    const audio       = this.getAttribute('audio');
+    const audioUrl    = this.getAttribute('audioUrl');    
     const optional    = this.getAttribute('optional');
 
     let lectureStr = '';
@@ -52,7 +54,11 @@ class Submodule extends HTMLElement {
     if(optional){
       optionalStr = '<span style="color:red;">[OPTIONAL]</span>';
     }
-
+    let audioStr = '';
+    if(audio){
+      audioStr = `<a href="${audioUrl}" class="text-decoration-none"> <i class="<i class="fas fa-microphone-alt"></i>"></i> ${audio}</a><br />`;
+    }
+    
     this.innerHTML = `
         <h5>${title} ${optionalStr}</h5>
         <p>
@@ -61,6 +67,7 @@ class Submodule extends HTMLElement {
           ${camtasiaStr}
           ${exerciseStr}
           ${linkStr}
+          ${audioStr}
           ${testStr}          
         </p>
     `;    
