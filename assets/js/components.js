@@ -56,7 +56,7 @@ class Submodule extends HTMLElement {
     }
     let audioStr = '';
     if(audio){
-      audioStr = `<a href="${audioUrl}" class="text-decoration-none"> <i class="<i class="fas fa-microphone-alt"></i> ${audio}</a><br />`;
+      audioStr = `<a href="${audioUrl}" class="text-decoration-none"> <i class="fas fa-microphone-alt"></i> ${audio}</a><br />`;
     }
     
     this.innerHTML = `
